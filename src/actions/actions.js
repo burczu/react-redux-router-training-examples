@@ -1,5 +1,5 @@
 // dostępne w aplikacji typy trzemaj w stałych
-const SET_DATA = 'SET_DATA';
+export const SET_DATA = 'SET_DATA';
 
 // kreator akcji: funkcja zwracająca akcję
 export function setData(data) {

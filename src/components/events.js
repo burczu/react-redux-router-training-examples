@@ -19,12 +19,12 @@ class Component extends React.Component {
 
   // obowiązkowa implementacja!
   render() {
-    return <a href="#" onClick={this.onAnchorClick.bind(this)}>{this.state.text}</a>;
+    //return <a href="#" onClick={this.onAnchorClick.bind(this)}>{this.state.text}</a>;
 
-    // return <a href="#" onClick={(event) => {
-    //   event.preventDefault();
-    //   consolo.log(this.state.text); // nie trzeba bindować bo arrow f. nie zmienia kontekstu!
-    // }}>{this.state.text}</a>;
+    return <a href="#" onClick={(event) => {
+      event.preventDefault();
+      consolo.log(this.state.text); // nie trzeba bindować bo arrow f. nie zmienia kontekstu!
+    }}>{this.state.text}</a>;
   }
 }
 
