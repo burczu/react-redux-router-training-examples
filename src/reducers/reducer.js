@@ -8,7 +8,7 @@ const initialState = {
 
 // funkcja reducera - umie zmieniać stan w zależności od przekazanej akcji
 export function reducer(state = initialState, action) {
-  switch (action) {
+  switch (action.type) {
     case actions.SET_DATA:
       // ZAWSZE zwracaj nowy obiekt będący nową, zmodyfikowaną wersją stanu!!
       return { ...state, data: action.payload.data };
