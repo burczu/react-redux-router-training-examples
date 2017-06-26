@@ -28,7 +28,7 @@ const About = () => {
       <div>
         <h1>About!!</h1>
         <Link to="/">Home</Link>
-        <Route path="/about" component={Nested} />
+        <Route path="/about/nested" component={Nested} />
       </div>
   );
 }
